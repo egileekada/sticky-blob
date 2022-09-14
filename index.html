@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {},
+            }, 
+        plugins: [
+            plugin(function ({ addUtilities }) {
+            addUtilities({
+                '.scrollbar-hide': {
+                /* IE and Edge */
+                '-ms-overflow-style': 'none',
+
+                /* Firefox */
+                'scrollbar-width': 'none',
+
+                /* Safari and Chrome */
+                '&::-webkit-scrollbar': {
+                    display: 'none'
+                }
+                }
+            }
+            )
+            })
+        ],
+        }
+    </script> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" media=”screen” />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <nav class=" w-full px-8 lg:px-12 bg-[#dbeded] py-2 lg:py-3 flex justify-between items-center  " >
+        <a href="index.html" > 
+            <img src="./assets/images/logo.png"  alt="logo" class=" w-10 lg:w-14  " />
+        </a>
+        <div style="font-family: Inter; font-weight: 700; " class=" hidden lg:flex items-center" >
+            <a href="#" class=" mx-5 " >Gameplay</a>
+            <a href="#" class=" mx-5 " >Showcase</a>
+            <a href="index.html" class=" mx-5 h-10 rounded-md text-white px-5 bg-[#A64BFF] flex justify-center items-center " >Download</a>
+        </div>
+    </nav>
+    <img class=" w-full " src="./assets/images/Sticky Bob Home.png" alt="home" />
+    <div class="w-full flex flex-col py-10" style="background: linear-gradient(100.17deg, #ECB6FF -7.13%, rgba(236, 182, 255, 0) 103.74%, rgba(136, 239, 233, 0.03125) 103.74%);" >
+        <p style="font-size: 40px; font-family: Karantina; font-weight: 700;" class=" text-center " >Blob Frenz</p>
+        <div class=" w-full px-12 py-8 " >
+            <div class="  w-full flex overflow-x-scroll " >
+                <div class=" flex " >
+                    <div class=" mx-2 lg:w-[360px] w-[150px]" > 
+                        <img src="./assets/images/Frame3.png"  alt="one" class=" lg:w-[360px] lg:h-[360px] w-[150px] h-[150px] " />
+                        <p class=" text-center lg:text-2xl text-base " style="margin-top: 10px; font-family:Roboto Serif; font-weight: 600; " >Samurai blob</p>
+                    </div>
+                    <div class=" mx-2 lg:w-[360px] w-[150px]" > 
+                        <img src="./assets/images/Frame4.png" alt="two" class=" lg:w-[360px] lg:h-[360px] w-[150px] h-[150px] " />
+                        <p class=" text-center lg:text-2xl text-base " style="margin-top: 10px; font-family:Roboto Serif; font-weight: 600; " >Pirate blob</p>
+                    </div>
+                    <div class=" mx-2 lg:w-[360px] w-[150px]" > 
+                        <img src="./assets/images/Frame5.png" alt="three" class=" lg:w-[360px] lg:h-[360px] w-[150px] h-[150px] " />
+                        <p class=" text-center lg:text-2xl text-base " style="margin-top: 10px; font-family:Roboto Serif; font-weight: 600; " >Rock n Roll blob</p>
+                    </div>
+                    <div class=" mx-2 lg:w-[360px] w-[150px]" > 
+                        <img src="./assets/images/Frame3.png" alt="four" class=" lg:w-[360px] lg:h-[360px] w-[150px] h-[150px] " />
+                        <p class=" text-center lg:text-2xl text-base " style="margin-top: 10px; font-family:Roboto Serif; font-weight: 600; " >Samurai blob</p>
+                    </div>
+                    <div class=" mx-2 lg:w-[360px] w-[150px]" > 
+                        <img src="./assets/images/Frame3.png" alt="five" class=" lg:w-[360px] lg:h-[360px] w-[150px] h-[150px] " />
+                        <p class=" text-center lg:text-2xl text-base " style="margin-top: 10px; font-family:Roboto Serif; font-weight: 600; " >Samurai blob</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <a href="index.html" style="font-family: Inter; font-weight: 700; " class=" mx-auto mt-6 h-10 rounded-md text-white w-56 bg-[#A64BFF] flex justify-center items-center " >Watch Gameplay</a>
+    </div>
+    <div class=" w-full flex lg:flex-row flex-col lg:py-0 py-10 relative justify-center items-center lg:px-0 px-8 " style="background: linear-gradient(102.7deg, #89EAFF -16.29%, #51E7FF 110.89%);" >
+        <img class=" absolute lg:flex hidden top-0 left-4 -mt-14 " alt="cube" src="./assets/images/Torus Half Sharp.png" />
+        <div class=" w-auto relative " >
+            <img style="width: 594px;" alt="header" class="lg:-mb-28 -mb-16 lg:-ml-10 z-20 relative" src="./assets/images/Happy_crowned.png" />
+            <img class="lg:-mb-40 relative z-10  " alt="cube" src="./assets/images/Round Cube.png" />
+        </div>
+        <div class=" w-full lg:w-[400px] relative lg:mt-0 mt-10" >
+            <img class=" absolute lg:flex hidden -top-20 right-6" alt="cube" src="./assets/images/Torus3.png" />
+            <p style="font-family: Karantina; font-weight: 700; color: #A64BFF; " class=" text-5xl relative" >Sticky Blobs</p>  
+            <p style="font-family: Karantina; font-weight: 700; color: #000; " class="mb-8 text-2xl  relative" >Play To Earn</p> 
+            <p style="font-family: Roboto Serif; font-weight: 700; color: #000; " class="mb-5 text-xl  relative" >Holla Fren, I have been waiting for your arrival.</p>
+            <p style="font-family: Roboto Serif; font-weight: 700; color: #000; " class="text-xl  relative" > Join the Blob championships inspired by Fall guys where players compete in daily blockchain tournaments and battle royale games. Winners earn the coins/tokens of the blockchain they contested in.</p>
+            <div class="flex lg:flex-row flex-col mt-4 " >
+                 <button style="font-family: Inter; font-weight: 700;"  class=" w-full lg:w-[203px] text-white h-9 bg-[#A64BFF] rounded-md lg:mr-2 " >Play Demo</button>
+                 <button style="font-family: Inter; font-weight: 700; color: #A64BFF; "  class="  w-full lg:w-[266px] lg:mt-0 mt-5 h-9 border-2 bg-white border-[#A64BFF] rounded-md lg:ml-2 " >Play Demo</button>
+            </div>
+        </div>
+    </div>
+    <div class=" w-full lg:h-[300px] relative flex justify-center items-end lg:py-0 py-6 lg:pb-10  " style="background: linear-gradient(102.7deg, #89EAFF -16.29%, #A64BFF 110.89%);" > 
+        <p style="font-family: Karantina; font-weight: 700; color: #000; " class=" text-2xl lg:text-6xl" >Sticky Blob Gameplay video</p>  
+    </div>
+    <img class=" w-full " src="./assets/images/Frame 19.png" alt="video" />
+    <div class=" w-full bg-[#000] px-8 lg:px-20 pt-16 pb-8 " >
+        <div class=" w-full flex lg:flex-row flex-col justify-between border-b pb-12 border-[#fff]  " >
+            <div class=" w-full flex flex-col"  >
+                <div class=" flex lg:flex-row flex-col " > 
+                    <div class=" lg:mr-6" >
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base" >Home</p>  
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base my-2" >Download Demo</p>  
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base" >Season Pass</p>  
+                    </div>
+                    <div class=" lg:mt-0 mt-6 lg:ml-6" >
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base" >Game Rules</p>  
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base my-2" >Privacy Policy</p>  
+                        <p style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-base" >Terms of Service</p>  
+                    </div>
+                </div>
+                <div style="margin-top: 48px;" class=" flex items-center lg:mx-0 mx-auto " >
+                    <div style=" background: #89EAFF; box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);" class=" w-12 h-12 rounded-full  flex justify-center items-center " >
+                        <img style="width: 15px;" src="./assets/images/facebook.png" alt="facebook" />
+                    </div>
+                    <div style="background: #89EAFF; box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);" class=" w-12 h-12 rounded-full ml-3 lg:ml-6  flex justify-center items-center " >
+                        <img style="width:17.97px; height: 17.97px;" src="./assets/images/instagram.png" alt="instagram" />
+                    </div>
+                    <div style="background: #89EAFF; box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);" class=" w-12 h-12 ml-3 lg:ml-6  rounded-full  flex justify-center items-center " >
+                        <img style="width: 17.97px;" src="./assets/images/twitter.png" alt="twitter" />
+                    </div>
+                    <div style="background: #89EAFF; box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);" class=" w-12 h-12 ml-3 lg:ml-6  rounded-full flex justify-center items-center" >
+                        <img style="width: 17.97px;" src="./assets/images/linkedin.png" alt="linkedin" />
+                    </div>
+                </div>
+            </div>
+            <div class=" flex lg:flex-row flex-col items-center" >
+                <div class=" flex items-center lg:justify-center justify-between w-full lg:w-auto lg:px-0 px-10 lg:mt-0 mt-8 " > 
+                    <img style="width: 74px ; height: 27px; " class="lg:mr-14" src="./assets/images/KYLNOX.png" alt="first" />
+                    <img style="width: 90px ; height: 39px; " class="lg:mr-20" src="./assets/images/Layer.png" alt="sec" />
+                </div>
+                <div class=" flex items-center lg:justify-center justify-between w-full lg:w-auto lg:px-0 px-10 lg:mt-0 mt-8 lg:ml-20 " >
+                    <img style="width: 39.17px ; height: 39.17; "  class="lg:mr-14" src="./assets/images/Vector.png" alt="thr" /> 
+                    <img style="width: 36.06px ; height: 35.24px;"  class="lg:mr-14"src="./assets/images/window.png" alt="fou" />
+                </div>
+            </div>
+        </div>
+        <p  style="font-family: Inter; font-weight: 600; color: #fff; " class=" text-sm mt-4 text-center " >Copyright © 2022 Sticky Blob All rights Reserved</p>
+    </div>
+</body>
+</html>
